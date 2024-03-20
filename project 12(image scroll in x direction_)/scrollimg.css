@@ -1,0 +1,44 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:'poppins', sans-serif;
+
+}
+
+.container{
+    display:flex;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px
+}
+
+.gallery {
+    width:600px;
+    display:flex;
+    overflow-x: scroll;
+    justify-content: center;
+ 
+}
+.gallery div {
+ 
+    flex-direction:column;
+    width:100%;
+display:grid;
+grid-column-gap: 10px;
+grid-template-columns: auto auto auto ;
+}
+.gallery div img{
+    width:200px;
+
+}
+#first{
+    width:200px;
+}
+#next,#back{
+    width:50px;
+    margin:10px;
+}
+.gallery::-webkit-scrollbar{
+    display:none;
+}

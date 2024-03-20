@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="music.css" />
+  <script src="https://kit.fontawesome.com/b3b464fd5f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="songList">
+            <ul>
+            <li> Intentions </li>
+            <li>diamonds in the sky</li>
+        </ul> </div> -->
+
+    <div class="topIcons">
+      <div id="topFirst"><i class="fa-solid fa-chevron-left"></i></div>
+      <div id="topSecond">
+        <i onclick="showList()" class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <img src="https://th.bing.com/th/id/R.525add86e1f9b032c8fe17f2591db1b3?rik=DVyTFPwPx39E3A&pid=ImgRaw&r=0"
+      id="coverImage" />
+    <span class="title"><br />
+      <h3>Intentions</h3>
+      <p>justin beiber ft.Quavo</p>
+    </span>
+    <audio id="song" src="Justin Bieber - Intentions (Official Video (Short Version)) ft. Quavo.mp3"></audio>
+    <br />
+    <input type="range" value="0" id="progress" />
+
+    <div class="bottomIcons">
+      <i onclick="backsong()" class="fa-solid fa-angles-left"></i>
+      <i id="play" onclick="playpause()" class="fa-solid fa-play"></i>
+      <i onclick="nextsong()" class="fa-solid fa-angles-right"></i>
+    </div>
+  </div>
+  <script src="music.js"></script>
+</body>
+
+</html>

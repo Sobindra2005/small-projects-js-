@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "poppins", sans-serif;
+  text-transform: capitalize;
+}
+
+body {
+  background: linear-gradient(to bottom right, #8338ec, #3a86ff);
+  height: 98vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  position: relative;
+  width: 300px;
+  height: fit-content;
+  padding: 20px;
+  margin: auto;
+  margin-top: 125px;
+  border-radius: 10px;
+  box-shadow: 5px 8px 14px 2px #780101;
+  background-color: #ffffff;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+}
+.container i {
+  background-color: rgb(243, 245, 247);
+  border-radius: 50%;
+  padding: 13px 16px;
+  box-shadow: 3px 3px 3px 0px rgb(167, 160, 160);
+}
+.container i:hover {
+  background-color: rgb(226, 231, 235);
+}
+.topIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottomIcons i {
+  padding: 13px 15px;
+}
+.bottomIcons {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  column-gap: 35px;
+  margin: auto;
+}
+#play {
+  background: #384038;
+  color: white;
+}
+#coverImage {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 3px solid gainsboro;
+  padding: 5px;
+  margin: auto;
+}
+#progress {
+  width: 300px;
+  height: 6px;
+}
+.coverImage {
+  animation: rotate 5s cubic-bezier(0.62, 0.59, 0.41, 0.38) 0s infinite;
+}
+@keyframes rotate {
+  100% {
+    rotate: 360deg;
+  }
+}
+.title {
+  text-align: center;
+}
+.songList {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #00000082;
+  color: #ffffff;
+  padding: 5px;
+  height: 175px;
+  right: 0px;
+  top: 23px;
+  width: 30px;
+  animation: slideList 0.4s ease-out 0s forwards;
+}
+@keyframes slideList {
+  100% {
+    width: 159px;
+  }
+}
+.songList ul li {
+  list-style: none;
+  border-bottom: 1px solid black;
+  height: 25px;
+  padding: 2px;
+  overflow-wrap: unset;
+  overflow: hidden;
+  font-size: 15px;
+  cursor: pointer;
+}
+.songList ul li:hover {
+  background-color: #fffdfd82;
+}
+.remove{
+ visibility: hidden;
+}

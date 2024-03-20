@@ -1,0 +1,83 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'poppins',sans-serif;
+    text-transform:capitalize;
+}
+body{
+    box-sizing:border-box;
+    background: linear-gradient(to bottom right,#001d3d ,#03045e, #0077b6);
+    height:88vh;
+    background-size: cover;
+
+}
+.container{
+ 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+width:600px;
+margin:auto;
+margin-top:80px;
+flex-direction: column;
+}
+#title{
+    font-size:30px;
+    color:white;
+
+}
+#title span{
+    color:rgb(75, 57, 23);
+  
+}
+#title #second{
+    color:goldenrod;
+}
+#qna{
+background-color:#0077b6;
+    width:700px;
+   padding:10px;
+    margin-top:20px;
+    color:aliceblue;
+    font-size:25px;
+    padding:10px;
+ 
+}
+
+#qna1 div{  
+    background-color:#e9edc9;
+    color:rgb(23, 127, 218);
+    font-size:25px;
+    padding:10px;
+    border:1px solid pink;
+   
+}
+.quizQuestion{
+    margin-top:30px;
+    padding:40px;
+    background-color:#778da9;
+    border-radius:10px;
+    cursor:pointer;
+}
+#qna1 div:hover{
+    background-color:#1b263b;
+    
+}
+.quizQuestion button{
+outline:none;
+border:none;
+    padding:10px;
+    margin-top:20px;
+    font-size:20px;
+    background:#03045e;
+    color:white;
+  
+}
+.quizQuestion button:hover{
+    background:#1417cc;
+    box-shadow: 0px,0px,30px #03045e;
+
+}
+.option{
+
+}

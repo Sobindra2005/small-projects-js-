@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Lato', sans-serif;
+  
+
+}
+body{
+    background-color:#2c3036;
+    color:white;
+}
+.content{
+   margin:auto;
+   margin-top: 100px;
+   padding:40px 60px;
+    width:fit-content;
+    background:linear-gradient(to bottom right,#03045e,#62bae9);
+    box-shadow:0px 0px 10px #2a9d8f;
+}
+.search{
+    display: flex;
+
+}
+
+#searchbox{
+    
+        font-weight: 500;
+        font-size: 16px;
+        width: 250px;
+        height: 33px;
+        border-radius: 18px;
+        border: 1px;
+        padding-left: 18px;
+        outline: none;
+}
+#search-icon{
+    margin:0px 20px;
+height:20px;
+    width:20px;
+    background-color: #ffffff;
+    padding:8px;
+    border-radius: 30px;
+}
+#condition{
+    width:140px;
+    margin:auto;
+    display:flex;
+
+}
+.condition-temp h3,.condition-temp h1{
+    margin:auto;
+}
+.weather h1{
+text-align:center;
+}
+.humidity img ,h3{
+    width:2.6em;
+}
+.humidity{
+
+ 
+    display:flex;
+    column-gap:1em; 
+    font-size:1em;
+    align-items: flex-end;
+
+}
+.wind-speed img{
+  
+    width:2.6em;
+}
+.wind-speed{
+    display:flex;
+column-gap:1em;
+justify-content:flex-end;
+}
+.bottom-content{
+    display: flex;
+    column-gap: 9em;
+    row-gap: 5em;
+    margin-top: 100px;
+}
+.errorMsg{
+    color:rgb(247, 56, 56);
+    font-weight:400;
+   
+}
+#searchbox{
+    cursor:text;
+}
+#search-icon{
+    cursor:pointer;
+}
+#windspeedtext{
+    font-size: 10px;
+    font-weight:100;
+}
+.conditiontext{
+    font-size:18px;
+    font-weight:500;
+}
+.conditiontext1{
+    font-size:18px;
+    font-weight:400;
+    position:absolute;
+    display:flex;
+right:480px;
+}

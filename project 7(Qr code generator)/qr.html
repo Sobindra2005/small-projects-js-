@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="qr.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        Qr<span id="first"> Code </span><span id="second">Generator</span>
+      </div>
+      <div class="ioContainer">
+        <input type="text" id="inputBox" placeholder="Enter Text/URL" />
+        <div class="imgContainer">
+        <!-- <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=sobhindra%20budhathoki"
+          class="img"
+        /> -->
+    </div>
+        <button type="submit" onclick="generateQr()" class="generateBtn">Generate</button>
+      </div>
+    </div>
+    <script src="qr.js"></script>
+  </body>
+</html>

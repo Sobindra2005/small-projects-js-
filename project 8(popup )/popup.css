@@ -1,0 +1,109 @@
+*{
+    padding:0px;
+    margin:0px;
+text-transform:capitalize;
+font-family: 'poppins',sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,600&display=swap');
+body{
+    background-color:rgb(133 116 161);
+    padding:10px;
+
+}
+.success{
+    padding: 6px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: yellow;
+    border:1px solid black;
+}
+.error{
+    padding: 6px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: red;
+    border:1px solid black;
+}
+.invalid{
+    padding: 6px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: green;
+    border:1px solid black;
+}
+.success:hover{
+    background-color: rgb(224, 224, 109);
+}
+.error:hover{
+    background-color: rgb(221, 91, 91);
+}
+.invalid:hover{
+    background-color: rgb(86, 151, 86);
+}
+.toast{
+    position: absolute;
+    bottom: 8px;
+    right: 40px;
+   
+    
+   
+}
+.toast div{
+    box-shadow: -1px -1px 5px 1.5px rgb(0, 0, 0);
+    background-color: white;
+    padding: 13px;
+    font-size: 19px;
+   margin-bottom:10px;
+    width: 230px;
+transform:translateY(40px);
+animation: trans 0.5s ease 0s forwards;
+position:relative;
+
+}
+@keyframes trans{
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0%);
+    }
+}
+.toast div::after{
+    content: '';
+    width: 245px;
+    height: 4px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #7bff00;
+    animation:toastTimeLine 5s cubic-bezier(0.58, 0.6, 0.58, 0.6) 0s forwards ;
+}
+@keyframes toastTimeLine{
+    100%{
+        width:0px;
+    }
+}
+.toast {
+    color:rgb(255, 255, 0);
+
+}
+.toast .errorToast {
+    color:red;
+    box-shadow: -1px -1px 5px 1.5px red;
+    
+}
+.toast .errorToast::after{
+    background-color:red;
+}
+.toast .invalidToast{
+    color:green;
+    box-shadow: -1px -1px 5px 1.5px green;
+}
+.toast .invalidToast::after{
+    background-color:green;
+}

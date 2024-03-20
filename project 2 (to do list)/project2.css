@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+body{
+    background: linear-gradient(135deg,#000000,#022042);
+    width:100%;
+    min-height:100vh;
+ 
+    
+}
+.container{
+    margin:auto;
+    margin-top:100px;
+    width:520px;
+    background:linear-gradient(to bottom right ,#457b9d,#a8dadc);
+    padding:20px;
+ box-shadow: 0px 0px 20px rgba(32, 80, 212, 0.5);
+    border-radius:20px;
+}
+.title{
+    font-size:30px;
+    font-weight:600;
+    color:rgb(17, 17, 95);
+}
+.title span{
+    color:rgb(13, 145, 13);
+}
+#addIcon{
+    width:35px;
+}
+
+
+.container span{
+    text-transform: capitalize;
+
+}
+.addBox{
+    margin-top:18px;
+    display:flex;
+    justify-content: space-between;
+}
+.addBox input{
+    padding-left:20px;
+    font-size:18px;
+    border:none;
+    outline:none;
+border-radius:17px;
+    width:400px;
+    height:40px;
+}
+#addBtn{
+    font-size:20px;
+    border-radius:17px;
+    border:none;
+    padding:5px 15px;
+  background-color:rgb(36, 90, 36);
+cursor:pointer;
+color:white;
+   
+}
+#addBtn:hover{
+   
+    box-shadow:0px 0px 30px rgb(59, 29, 196);
+}
+.noteList{
+    margin-top:10px;
+    list-style-type: none;
+   font-size:21px;
+   text-transform: capitalize;
+
+}
+.noteList li{
+    position:relative;
+    height:37px;
+    padding-left: 35px;
+    cursor:pointer;
+
+}
+.noteList li::before{
+
+    content:'';
+  position:absolute;
+ font-size: 28px;
+ height:25px;
+ width:25px;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  left:0px;
+  
+}
+.noteList li.checked{
+    color: #df1616;
+    text-decoration: line-through;
+}
+.noteList li.checked::before{
+    background-image: url(images/checked.png);
+  
+}
+.noteList li span{
+   text-align:center;
+   padding-left:10px;
+   position:absolute;
+   right:3px;
+   border-radius:7px;
+   cursor:pointer;
+}
+.noteList li span:hover{
+    background-color: #a8dadc;
+ 
+}
